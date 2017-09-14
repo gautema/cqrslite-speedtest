@@ -7,13 +7,14 @@ using CQRSlite.Domain;
 using CQRSlite.Events;
 using CQRSlite.Routing;
 
-namespace CQRSlite_speedtest
+namespace core
 {
     class Program
     {
         static void Main(string[] args)
         {
             new Program().DoStuff().Wait();
+
         }
 
         public async Task DoStuff()
@@ -112,7 +113,7 @@ namespace CQRSlite_speedtest
             Console.WriteLine($"{eventstore.Read:##,###} events read from eventstore");
             Console.WriteLine($"{Employee.AppliedEvents:##,###} events applied");
             Console.WriteLine($"{watch.ElapsedMilliseconds:##,###} ms");
-            Console.WriteLine($"{Employee.AppliedEvents/watch.ElapsedMilliseconds:##,###} events handled per ms");
+            Console.WriteLine($"{Employee.AppliedEvents / watch.ElapsedMilliseconds:##,###} events handled per ms");
         }
     }
 
@@ -134,7 +135,7 @@ namespace CQRSlite_speedtest
 
         public object GetService(Type type)
         {
-            if(type == typeof(IHandlerRegistrar))
+            if (type == typeof(IHandlerRegistrar))
                 return _bus;
             return new EmployeeHandler(new Session(_repository));
         }

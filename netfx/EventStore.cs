@@ -27,9 +27,10 @@ namespace CQRSlite_speedtest
             var enumerable = events.ToArray();
             Interlocked.Add(ref Saved, enumerable.Length);
             List<IEvent> list;
+            var id = enumerable[0].Id;
+
             lock (_lock)
             {
-                var id = enumerable.First().Id;
                 var exist = _dict.TryGetValue(id, out list);
                 if (!exist)
                 {
