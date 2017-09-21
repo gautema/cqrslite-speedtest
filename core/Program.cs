@@ -117,7 +117,7 @@ namespace core
         }
     }
 
-    internal class ServiceLocator : IServiceLocator
+    internal class ServiceLocator : IServiceProvider
     {
         private readonly IRepository _repository;
         private readonly Router _bus;
@@ -126,11 +126,6 @@ namespace core
         {
             _repository = repository;
             _bus = bus;
-        }
-
-        public T GetService<T>()
-        {
-            return (T)GetService(typeof(T));
         }
 
         public object GetService(Type type)
