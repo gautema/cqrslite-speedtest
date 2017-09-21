@@ -12,5 +12,6 @@
 
 ## dotnet core
 - 0.12.0  - exec: ~79s. per ms: ~800
+- 0.13.2  - exec: ~8.5. per ms: ~7400
 - 0.15.1  - exec: ~6.3s. per ms: ~10000
 - 0.16.0  - exec: ~6.3s. per ms: ~10000
