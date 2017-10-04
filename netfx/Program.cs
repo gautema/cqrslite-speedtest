@@ -68,8 +68,6 @@ namespace CQRSlite_speedtest
                 }
             });
 
-
-
             var id = Guid.NewGuid();
             await session.Add(new Employee(id));
             await session.Commit();
@@ -116,7 +114,7 @@ namespace CQRSlite_speedtest
         }
     }
 
-    internal class ServiceLocator : IServiceLocator
+    internal class ServiceLocator : IServiceProvider
     {
         private readonly IRepository _repository;
         private readonly Router _bus;
@@ -125,11 +123,6 @@ namespace CQRSlite_speedtest
         {
             _repository = repository;
             _bus = bus;
-        }
-
-        public T GetService<T>()
-        {
-            return (T) GetService(typeof(T));
         }
 
         public object GetService(Type type)
