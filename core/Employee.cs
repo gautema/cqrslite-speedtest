@@ -42,6 +42,13 @@ namespace core
         {
             return 1;
         }
+
+        //protected override void ApplyEvent(IEvent @event)
+        //{
+        //    if(@event is EmployeeCreated created) Apply(created);
+        //    else if (@event is EmployeeRaiseGiven raiseGiven) Apply(raiseGiven);
+        //    else base.ApplyEvent(@event);
+        //}
     }
 
     public class EmployeeRaiseGiven : IEvent

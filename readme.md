@@ -1,10 +1,10 @@
 ﻿# Performance testing of CqrsLite
-Running on Dell Precision T3610 with 
-specs:
-Intel Xeon E5-1650v2@3.5 GHz
-32 GB DDR ram
-Samsung SSD SM841 512GB
-Windows 10
+Running on Dell Precision T3610 with  
+specs:  
+Intel Xeon E5-1650v2@3.5 GHz  
+32 GB DDR ram  
+Samsung SSD SM841 512GB  
+Windows 10  
 
 ## .net full framework
 - 0.3.4   - exec: ~57s. per ms: ~1100
@@ -16,6 +16,7 @@ Windows 10
 - 0.15.1  - exec: ~8s.  per ms: ~8000
 - 0.16.0  - exec: ~8s.  per ms: ~8200
 - 0.17.0  - exec: ~6.2s.  per ms: ~10000
+- 0.18.0  - exec: ~5s.  per ms: ~125000
 
 ## dotnet core
 - 0.12.0  - exec: ~79s. per ms: ~800
@@ -24,3 +25,4 @@ Windows 10
 - 0.15.1  - exec: ~6.3s. per ms: ~10000
 - 0.16.0  - exec: ~6.3s. per ms: ~10000
 - 0.17.0  - exec: ~5.0s.  per ms: ~12500
+- 0.18.0  - exec: ~4.0s.  per ms: ~15500
