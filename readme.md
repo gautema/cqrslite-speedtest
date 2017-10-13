@@ -28,6 +28,7 @@ Windows 10
 
 
 ## dotnet core macbook 2015
+1.3 ghz i7 core m, 8 gb ram, 512 gb ssd.
 
 - 0.12.0 - exec: ~139s per ms: ~450
 - 0.13.2 - exec: ~16.7s per ms: ~3800
