@@ -25,3 +25,14 @@ Windows 10
 - 0.16.0  - exec: ~6.3s. per ms: ~10000
 - 0.17.0  - exec: ~5.0s.  per ms: ~12500
 - 0.18.0  - exec: ~4.0s.  per ms: ~15500
+
+
+## dotnet core macbook 2015
+
+- 0.12.0 - exec: ~139s per ms: ~450
+- 0.13.2 - exec: ~16.7s per ms: ~3800
+- 0.14.4 - exec: ~16.7s per ms: ~3800
+- 0.15.1 - exec: ~12.5s per ms: ~5000
+- 0.16.0 - exec: ~12.5s per ms: ~5000
+- 0.17.0 - exec: ~9.6s per ms: ~6500
+- 0.18.0 - exec: ~7.5s per ms: ~8300
