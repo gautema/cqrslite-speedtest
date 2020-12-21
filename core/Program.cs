@@ -82,7 +82,7 @@ namespace core
             }
 
             var registrar = new RouteRegistrar(new ServiceLocator(rep, router));
-            registrar.Register(typeof(EmployeeGiveRaise));
+            registrar.RegisterInAssemblyOf(typeof(EmployeeGiveRaise));
 
             var num = 3000;
             var tasks = new Task[num];

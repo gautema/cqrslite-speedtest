@@ -42,3 +42,6 @@ Windows 10
 - 0.17.0 - exec: ~9.6s per ms: ~6500
 - 0.18.0 - exec: ~7.5s per ms: ~8300
 - 0.19.0 - exec: ~7.5s per ms: ~8300
+
+## dotnet core macbook 2018
+- 1.33.0 - exec: ~3.2s.  per ms: ~19500
